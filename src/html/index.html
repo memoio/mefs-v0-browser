@@ -1,0 +1,31 @@
+<!--#set var="root" value="/"-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>浏览器</title>
+  <base href="<!--#echo var="root"-->">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="lib/echarts.min.js"></script>
+  <script>
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div class=""><!--#include file="${root}html/search.html"--></div>
+    <div class=""><!--#include file="${root}html/stateInfo.html"--></div>
+    <div class="content">
+      <div class=""><!--#include file="${root}html/newest.html"--></div>
+      <div class="hide"><!--#include file="${root}html/blockList.html"--></div>
+      <div class="hide"><!--#include file="${root}html/blockInfo.html"--></div>
+      <div class="hide"><!--#include file="${root}html/txlist.html"--></div>
+      <div class="hide"><!--#include file="${root}html/txInfo.html"--></div>
+      <div class="hide"><!--#include file="${root}html/addrList.html"--></div>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+$color:rgb(46,137,114);
+// 搜索
+.search{
+  background:linear-gradient(to left,rgb(3,95,70),rgb(66,104,127));
+  height:120px;
+  position: relative;
+  >div{
+    position: absolute;
+    width: 60%;
+    height: 50px;
+    top: 35px;
+    left: 20%;
+    background:#fff;
+    border-radius: 5px;
+    input,button{
+      height:100%;
+      outline: 0;
+      border:0;
+    }
+    input{
+      border-left:1px solid rgb(213,218,226);
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 75%;
+    }
+    button{
+      color:#fff;
+      background:rgb(46,137,114);
+      width:100px;
+      position: absolute;
+      right:-1px;
+      border-top-right-radius:5px;
+      border-bottom-right-radius:5px;
+    }
+  }
+}
+.select{
+  &.s1{
+    display: inline-block;
+    width:100px;
+    height:100%;
+    cursor: pointer;
+    position: relative;
+    span,ul{
+      box-sizing:border-box;
+    }
+    >span{
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+      padding: 5px 10px;
+      position: relative;
+      i{
+        position: absolute;
+        right:3px;
+        bottom: 6px;
+      }
+    }
+    ul{
+      position: absolute;
+      width: 100%;
+      background:#fff;
+      li{
+        padding: 5px 10px;
+        text-align: center;
+        &:hover{
+          color:#fff;
+          background:rgb(46,137,114);
+        }
+      }
+    }
+  }
+}
+.button{
+  // outline: 0;
+  // border:0;
+  // background:#fff;
+  // position: relative;
+  // overflow: hidden;
+  // &:hover:after{
+  //   content: "";
+  //   background:rgba(0,0,0,.2);
+  //   display: block;
+  //   position: absolute;
+  //   width:100%;
+  //   height:100%;
+  //   left:0;
+  //   top:0;
+  // }
+  // &:before {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   background: rgba(255, 255, 255, 0.3);
+  //   border-radius: 50%;
+  //   width:300%;
+  //   height:300%;
+  //   top:-100%;
+  //   left:-100%;
+  //   opacity: 0;
+  //   transition: all 1s;
+  // }
+  // &:active:before {
+  //   border-radius: 50%;
+  //   width:100%;
+  //   height:100%;
+  //   top:-100%;
+  //   left:-100%;
+  //   opacity: 1;
+  //   transition: 0s;
+  // }
+  &.b2{
+    float:right;
+    background:rgb(46,137,114);
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+  }
+}
+// 内容
+.content,.stateInfo{
+  width:80%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+// 状态信息
+.stateInfo{
+  border:1px solid rgb(231,234,243);
+  border-radius:5px;
+  >div{
+    display: inline-block;
+    &:first-child{
+      width:410px;
+      height:150px;
+      vertical-align: top;
+      div{
+        box-sizing: border-box;
+        height:50%;
+        font-size:1.5rem;
+        // line-height: 1.5rem;
+        padding:{
+          top:25px;
+          left:25px;
+        }
+        &:nth-child(1){
+          border-bottom:1px solid rgb(231,234,243);
+        }
+      }
+    }
+    &:not(:first-child){
+      border-left:1px solid rgb(231,234,243);
+    }
+  }
+}
+.newest{
+  >div{
+    display:inline-block;
+    box-sizing:border-box;
+    width: 49%;
+    border:1px solid rgb(231,234,243);
+    padding:10px;
+    border-radius: 5px;
+    li{
+      height:40px;
+      line-height: 40px;
+      border-bottom:1px solid rgb(231,234,243);
+      &:first-child{
+        font-size: 1.5rem;
+      }
+      &:not(:first-child):hover{
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        &:hover:after{
+          content: "";
+          background:rgba(0,0,0,.2);
+          display: block;
+          position: absolute;
+          width:100%;
+          height:100%;
+          left:0;
+          top:0;
+        }
+      }
+    }
+    &:nth-child(1){
+      float:left;
+    }
+    &:nth-child(2){
+      float:right;
+    }
+  }
+}
+// 信息列表
+.blockList,.txList,.addrList{
+  >div:nth-child(1){
+    >div{
+      padding:0 20px;
+      &:first-child{
+        float:left;
+        button,input{
+          outline: 0;
+          border:0;
+        }
+        button{
+          color:#fff;
+          background:$color;
+          width:50px;
+          height:20px;
+          vertical-align: top;
+          margin:0 2px;
+          border-radius: 2px;
+          &.fa{
+            width:25px;
+          }
+        }
+        input{
+          width:20px;
+          padding:0 5px;
+        }
+      }
+      &:last-child{
+        float:right;
+        select{
+          border:0;
+          outline: 0;
+          width:40px;
+        }
+      }
+    }
+  }
+  >div:nth-child(2){
+    clear: both;
+    padding-top:10px;
+    table{
+      width:100%;
+    }
+  }
+}

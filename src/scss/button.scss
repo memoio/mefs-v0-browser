@@ -1,0 +1,16 @@
+.button{
+  outline: 0;
+  border:0;
+  background:#fff;
+}
+
+@mixin button($c:#000, $bc:#fff, $br:0, $p:0, $m:0){
+  color:$c;
+  background-color:$bc;
+  border-radius:$br;
+  padding:$p;
+  margin:$m;
+}
+.bt{
+  @include button(#fff, rgb(46,137,114), 3px, 2px 5px, 5px 10px)
+}

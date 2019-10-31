@@ -1,0 +1,38 @@
+{
+  "name": "browser",
+  "version": "1.0.0",
+  "description": "以太坊浏览器",
+  "author": "lufei",
+  "private": true,
+  "main": "",
+  "scripts": {
+    "pack": "webpack",
+    "dev": "nodemon E:/rj/hc/node/global/node_modules/webpack/bin/webpack.js --mode development"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^2.0.2",
+    "copy-webpack-plugin": "^5.0.3",
+    "css-loader": "^2.1.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-minifier": "^4.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "loader-utils": "^1.2.3",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=11.0.0",
+    "npm": ">=6.4.1"
+  }
+}
